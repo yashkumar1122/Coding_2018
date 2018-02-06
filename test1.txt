@@ -1,0 +1,10 @@
+ Volume in drive C has no label.
+ Volume Serial Number is 76B0-775D
+
+ Directory of C:\Users\Tyler\Desktop\My Project
+
+07-02-2018  02:05    <DIR>          .
+07-02-2018  02:05    <DIR>          ..
+07-02-2018  02:05                 0 test1.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  55,687,426,048 bytes free
