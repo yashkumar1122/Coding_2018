@@ -1,4 +1,6 @@
- import java.util.*;
+/*Given an array A[] and a number x, check for pair in A[] with sum as x */
+
+import java.util.*;
 import java.util.Map.Entry;
 
 	public class Test{
@@ -16,12 +18,8 @@ import java.util.Map.Entry;
 	 		}
 			System.out.println("no pair found");
 	 	}
-
-
-
- 
 	 
-		public static void main(String[] args) {
+	public static void main(String[] args) {
 	        int[] arr = {1, 4, 45, 6, 10, 8};
 	        checkSum(arr, 100);
 	}		
