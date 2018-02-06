@@ -1,0 +1,27 @@
+ import java.util.*;
+import java.util.Map.Entry;
+
+	public class Test{
+
+
+		public static void checkSum(int[] ary,int sum){
+	 		HashSet<Integer> hs = new HashSet<>();
+	 		for(Integer x : ary){
+	 			int other = sum - x;
+	 			if(hs.contains(other)){
+	 				System.out.println(x + "+" + other + "=" + sum);
+	 				return;
+	 			}
+	 			hs.add(x);	 		
+	 		}
+			System.out.println("no pair found");
+	 	}
+
+
+
+ 
+	 
+		public static void main(String[] args) {
+	        int[] arr = {1, 4, 45, 6, 10, 8};
+	        checkSum(arr, 100);
+	}		
