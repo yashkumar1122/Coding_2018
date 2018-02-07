@@ -1,0 +1,32 @@
+import java.util.HashSet;
+
+public class ArraySubset {
+	
+	static boolean isSubset(int[] ary1, int[] ary2, int m, int n) {
+		HashSet<Integer> hset = new HashSet<Integer>();
+		
+		for(int i = 0; i < m; i++)
+			if(!hset.contains(ary1[i]))
+				hset.add(ary1[i]);
+			
+		for(int j = 0; j < n; j++)
+			if(!hset.contains(ary2[j]))
+				return false;
+		
+		return true;
+	}
+
+	public static void main(String[] args) {
+		int[] array1 = {11, 1, 13, 21, 3, 7};
+		int[] array2 = {11, 1, 7, 3};
+		int m = array1.length;
+		int n = array2.length;
+		
+		if(isSubset(array1, array2, m, n))
+			System.out.println("Array2 is subset of Array1");
+		else
+			System.out.println("Array2 is not subset of Array1");
+
+	}
+
+}
